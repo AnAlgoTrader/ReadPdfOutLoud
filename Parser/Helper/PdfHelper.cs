@@ -2,8 +2,8 @@ namespace Parser.Helper
 {
     public class PdfHelper
     {
-        public void Parse(string fileName)
-        {
+        public void ReadOutLoud(string fileName)
+        {   
 
         }
     }

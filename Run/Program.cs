@@ -1,4 +1,5 @@
 ﻿using System;
+using Parser.Helper;
 
 namespace Run
 {
@@ -6,7 +7,8 @@ namespace Run
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var pdfHelper = new PdfHelper();
+            pdfHelper.ReadOutLoud();
         }
     }
 }
