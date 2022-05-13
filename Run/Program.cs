@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.IO;
 using Parser.Helper;
 
 namespace Run
@@ -7,8 +7,9 @@ namespace Run
     {
         static void Main(string[] args)
         {
+            var pdfFile = $"{Directory.GetCurrentDirectory()}/TestFiles/TheBlackCat.pdf";
             var pdfHelper = new PdfHelper();
-            pdfHelper.ReadOutLoud();
+            pdfHelper.ReadOutLoud(pdfFile);
         }
     }
 }
