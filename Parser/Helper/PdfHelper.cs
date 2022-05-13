@@ -9,10 +9,18 @@ namespace Parser.Helper
     {
         public void ReadOutLoud(string fileName, int startFromPage)
         {
-            var pdfContent = GetPdfContent(fileName);
-
+            var pdfPages = GetPdfContent(fileName);
         }
-
+        public void PrintText(string fileName)
+        {
+            var pdfPages = GetPdfContent(fileName);
+            var pageNumber = 1;
+            foreach (var pageContent in pdfPages)
+            {
+                Console.WriteLine($"----- {pageNumber++} -----");
+                Console.WriteLine(pageContent);
+            }
+        }
         private List<string> GetPdfContent(string fileName)
         {
             var pdfContent = new List<string>();
