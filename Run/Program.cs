@@ -9,7 +9,7 @@ namespace Run
         {
             var pdfFile = $"{Directory.GetCurrentDirectory()}/TestFiles/TheBlackCat.pdf";
             var pdfHelper = new PdfHelper();
-            pdfHelper.PrintText(pdfFile);
+            pdfHelper.ReadOutLoud(pdfFile, 1);
         }
     }
 }

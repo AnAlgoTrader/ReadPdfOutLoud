@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace Parser.Helper
 {
@@ -9,7 +8,9 @@ namespace Parser.Helper
     {
         public void ReadOutLoud(string fileName, int startFromPage)
         {
+            startFromPage = startFromPage - 1;
             var pdfPages = GetPdfContent(fileName);
+            //TODO call Google api with text
         }
         public void PrintText(string fileName)
         {
